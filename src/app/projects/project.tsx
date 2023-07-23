@@ -8,7 +8,6 @@ import toast from 'react-hot-toast';
 
 const Project = (props:ProjectCardProps) => {
     const handleLinkClick=(url:string)=>{
-        console.log(url);
         if(url.trim().length==0) toast.error("Sorry, the url cannot be provided publicly");
 
     }
@@ -18,10 +17,10 @@ const Project = (props:ProjectCardProps) => {
       <div className='text-white'>
         {props?.timeline}
          <div className='flex flex-col gap-2 mt-2 mb-2'>
-    <Link className='text-sm md:text-lg font-bold text-blue-600' href={props?.url}onClick={()=>handleLinkClick(props?.url)}><button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-1 border-b-1 text-sm border-blue-700 hover:border-blue-500 rounded">
+    <Link className='text-sm md:text-lg font-bold text-blue-600' href={props?.url}onClick={()=>handleLinkClick(props?.url)} style={{pointerEvents:props?.url.trim().length==0?'none':'all'}}><button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-1 border-b-1 text-sm border-blue-700 hover:border-blue-500 rounded">
   {"Open ->"}
 </button></Link>
-    <Link href={props?.gitHubUrl} onClick={()=>handleLinkClick(props?.gitHubUrl)}>
+    <Link href={props?.gitHubUrl} onClick={()=>handleLinkClick(props?.gitHubUrl)} style={{pointerEvents:props?.url.trim().length==0?'none':'all'}}>
     <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1  border-b-1 px-1 text-sm border-blue-700 hover:border-blue-500 rounded flex gap-1 disabled:opacity:25" >
   {"GitHub"}
   <Image src={Github} height={20} width={20} alt='git hub icon'/>
