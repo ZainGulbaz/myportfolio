@@ -1,9 +1,10 @@
+
 import React from "react";
 import Project from "./project";
 import { ProjectCardProps } from "@/utils/Interfaces";
 
 const Projects = () => {
-  const projects: ProjectCardProps[] = [
+  const projects: Readonly<ProjectCardProps>[] = [
     {
       title: "CEM Operator",
       description:
@@ -21,6 +22,15 @@ const Projects = () => {
         timeline: "Apr 2023 - Present",
         gitHubUrl: "",
         url: "http://rockwellits.com/index.html",
+      },
+      {
+        title:"AI Blog Post",
+        description:"Imagine generating AI-powered blog posts tailored to your desired topic and specific keywords–that's exactly what this project is all about. Through dedicated exploration and hands-on experience, I've successfully developed a system that crafts insightful blog content using cutting-edge technology.",
+        gitHubUrl:"https://github.com/ZainGulbaz/blogpost",
+        url:"",
+        skills:["Next JS","Tailwind CSS","Open AI","Stripe","OAuth"],
+        timeline:"July 2023- August 2023",
+        videoUrl:"https://www.loom.com/share/1805f0d5114840a78c8d242839b087c6"
       },
     {
         title: "Truck Booking App Backend",
@@ -57,6 +67,7 @@ const Projects = () => {
         timeline: "Aug 2021 - Mar 2022",
         gitHubUrl: "",
         url: "",
+        videoUrl:"https://www.loom.com/share/76501a1f9c004f9cb1657d815dd98d33"
       },
       {
         title: "Apple Warehouse Management",
@@ -64,14 +75,13 @@ const Projects = () => {
           "The project is used to manage the warehouse for an apple store in the USA. It parses the invoice with docparser and the data is stored in our database with the help of webhooks.",
         skills: ["UI Bakery", "Express JS","PSQL","DocParser"],
         timeline: "Apr 2021 - Aug 2021",
-        gitHubUrl: "",
-        url: "",
+        
       }
       
   ];
   return (
     <div className="flex flex-col justify-center items-center p-2 gap-4 h-full">
-      {projects?.map((project) => (
+      {projects?.map((project,index) => (
         <Project
           title={project?.title}
           timeline={project?.timeline}
@@ -79,6 +89,8 @@ const Projects = () => {
           skills={project?.skills}
           gitHubUrl={project?.gitHubUrl}
           url={project?.url}
+          videoUrl={project?.videoUrl}
+          key={index}
         />
       ))}
     </div>

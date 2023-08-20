@@ -1,3 +1,4 @@
+"use client";
 import React from 'react'
 import Tabs from './Tabs'
 import Skills from './Skills'
@@ -7,6 +8,7 @@ import GitHub from "../../../assets/github.svg";
 import LinkedIn from "../../../assets/linkedin.svg";
 import Instagram from "../../../assets/Instagram.svg";
 import Medium from "../../../assets/medium.svg"
+import HackerRank from "../../../assets/hackerank.png";
 
 
 const Sidebar = () => {
@@ -26,6 +28,7 @@ const Sidebar = () => {
         <Link href="https://www.linkedin.com/in/zain-gulbaz-079751207/"><Image src={LinkedIn} width={30} height={30} alt="Linkedin"/></Link>
         <Link href="https://www.instagram.com/zackhie07/"><Image src={Instagram} width={30} height={30} alt="Instagram"/></Link>
         <Link href="https://medium.com/@zaingulbaz8"><Image src={Medium} width={30} height={50} alt="Medum"/></Link>
+        <Link href={"https://www.hackerrank.com/zaingulbaz8"}><Image src={HackerRank} width={30} height={50} alt="Medum"/></Link>
         
         
         

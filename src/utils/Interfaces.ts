@@ -9,8 +9,9 @@ export interface ExpCardProps{
 export interface ProjectCardProps{
     title:string,
     description:string,
-    url:string,
-    gitHubUrl:string,
+    url?:string,
+    gitHubUrl?:string,
     timeline:string,
+    videoUrl?:string,
     skills:string[]
 }

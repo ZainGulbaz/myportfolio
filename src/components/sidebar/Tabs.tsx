@@ -16,8 +16,8 @@ const tabs = [
     path: "/projects",
   },
   {
-    name:"Resume",
-    path:process.env.NEXT_PUBLIC_RESUME+""
+    name:"Certifications",
+    path:"/certifications",
   }
 ];
 
