@@ -13,6 +13,7 @@ const Projects = () => {
       timeline: "Mar 2022 - Present",
       gitHubUrl: "",
       url: "https://mycemapp.com/onemycem",
+      videoUrl:"https://www.loom.com/share/ec43df0cb369405b9d27126ffa61f82c"
     },
     {
         title: "Chat Bot",
