@@ -27,7 +27,7 @@ const Tabs = () => {
   const pathname=usePathname();
   return (
     <ul className="w-max flex md:flex-col gap-2 justify-center items-center">
-      <li><div className="md:hidden flex text-white text-xl mr-4"> Zain <AiOutlineLaptop className="text-4xl"/> </div></li>
+      <li><div className="md:hidden flex text-white text-xl"><AiOutlineLaptop className="text-4xl"/> </div></li>
     {
      
       tabs?.map(tab=>{
