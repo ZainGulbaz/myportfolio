@@ -4,8 +4,8 @@ import ExpCard from './ExpCard'
 
 const Experience = () => {
   const experiences=[{
-title:"Senior Software Engineer",
-timeline:"Mar 2021- present",
+title:"Mid Senior Software Engineer",
+timeline:"Mar 2022- present",
 company:"Code Hoppers",
 description:"I developed CEM Operator software in React, JSP, and MariaDB for Codehoppers, which captures Android app records and sends them to an API, displaying them on a console. The database stores over 30 million records monthly across 6+ countries.I also engineered and implemented a high-quality backend and dashboard for a truck booking application using Nest.js (Node JS) and Type ORM for the backend and React and Chakra UI for the frontend.",
 skills:["React","JSPs","Node JS","NEST JS","Maria DB","Type ORM"]

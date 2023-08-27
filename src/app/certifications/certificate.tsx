@@ -11,7 +11,7 @@ const CertificateComponent = (props: Certificate) => {
       <div className="flex justify-between items-center">
         <div className="text-sm md:text-lg text-white font-bold mb-2">{props?.title}</div>
         <Link
-          className="flex text-blue-600 items-center justify-center cursor-pointer gap-1"
+          className="flex text-blue-200 items-center justify-center cursor-pointer gap-1"
           href={props.url}
         >
           {"Open "} <IoIosOpen />{" "}
@@ -24,8 +24,8 @@ const CertificateComponent = (props: Certificate) => {
             <Image src={props.icon} width={70} height={70} alt="Icon" />
           </div>
           <div className="mt-2">
-            <h5 className="text-blue-600 text-xs ">{props.timeline}</h5>
-            <h5 className="font-bold text-purple-700 text-xs">
+            <h5 className="text-blue-400 text-xs ">{props.timeline}</h5>
+            <h5 className="font-bold text-blue-400 text-xs">
               {props.platform}
             </h5>
           </div>

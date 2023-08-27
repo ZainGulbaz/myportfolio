@@ -16,7 +16,7 @@ const Sidebar = () => {
     <div className='flex md:flex-col md:pt-12  md:justify-center md:items-center md:py-4 p-2 md:h-screen gap-2 md:gap-4 md:p-2 p-1  md:p-0 w-screen md:w-full'>
         <div className='flex flex-col'>
         <h1 className='text-xl md:text-4xl font-bold text-white hidden md:inline'>Zain Gulbaz</h1>
-       <h6 className='text-xs md:text-md hidden md:inline'>Software Engineer at Code Hoppers</h6>
+       <h6 className='text-xs md:text-md hidden md:inline text-gray-300'>Software Engineer at Code Hoppers</h6>
         </div>
 
         <Skills/>
